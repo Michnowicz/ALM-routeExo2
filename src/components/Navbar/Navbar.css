@@ -1,0 +1,46 @@
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    margin-top: 30px;
+}
+
+.navIcon {
+    width: 10%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.logoWhite {
+    border-radius: 50%;
+}
+
+.navBreak {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.navBreak hr {
+    color: white;
+}
+
+
+.navLink {
+    width: 65%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.062);
+}
+.navLink button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
