@@ -7,3 +7,86 @@
     background-position: center;
     background-size: cover;
 }
+
+.CrewDiv {
+    height: 100%;
+    padding: 12% 12% 2% 12%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-end;
+}
+
+.CrewTitle {
+    display: flex;
+    gap: 20px;
+}
+.CrewTitle p:first-of-type {
+    color: #494e57;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+.CrewTitle p:last-of-type {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+
+.carousel {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.carData {
+    width: 50%;
+    margin-bottom: 60px;
+}
+.carText {
+    margin-bottom: 60px;
+}
+
+.carText h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Forum", serif;
+}
+.carText h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Forum", serif;
+    margin-bottom: 20px;
+}
+.carText p {
+    font-size: 1.2rem;}
+
+
+.carBtn {
+    display: flex;
+    gap: 10px;
+}
+.roundBtn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.btnGrey {
+    background-color: #34373e;
+}
+.btnWhite {
+    background-color: #ffffff;
+}
+
+
+
+.carImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.crewImg {
+    height: 420px;
+}

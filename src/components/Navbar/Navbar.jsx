@@ -2,6 +2,7 @@ import "./Navbar.css"
 import { Link } from "react-router-dom"
 import Logo from "../../assets/shared/logo.svg"
 
+
 export default function Navbar() {
     
 
@@ -19,7 +20,7 @@ export default function Navbar() {
                 <Link to="/"><button>00 HOME</button></Link>
                 <Link><button>01 DESTINATION</button></Link>
                 <Link to="/crew"><button>02 CREW</button></Link>
-                <Link><button>03 TECHNOLOGY</button></Link>
+                <Link to="/technology"><button>03 TECHNOLOGY</button></Link>
             </div>
         </nav>
     )

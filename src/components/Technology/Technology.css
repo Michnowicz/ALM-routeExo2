@@ -1,0 +1,102 @@
+
+.Technology {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.technologyDiv {
+    height: 100%;
+    padding: 12% 0% 2% 12%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* justify-content: flex-end; */
+}
+.TechnologyTitle {
+    display: flex;
+    gap: 20px;
+}
+.TechnologyTitle p:first-of-type {
+    color: #494e57;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+.TechnologyTitle p:last-of-type {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+
+.technologyCore {
+    display: flex;
+    width: 100%;
+}
+
+.leftDiv {
+    display: flex;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.btnRound {
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    font-family: "Forum", serif;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnRoundWhite {
+    background-color: white;
+    color: black;
+}
+.btnRoundTransparent {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.textDiv {
+    margin-left: 40px;
+}
+.textDiv p:first-of-type {
+    font-size: 0.95rem;
+    color: #979bb7;
+    margin-bottom: 20px;
+}
+.textDiv h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Forum", serif;
+    margin-bottom: 20px;
+}
+.textDiv p:last-of-type {
+    color: #979bb7;
+    width: 75%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+
+.rightDiv {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.rightDiv img {
+    height: 420px;
+}

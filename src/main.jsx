@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter  } from 'react-router-dom';
 
 import Home from './components/Home/Home.jsx';
 import Crew from './components/Crew/Crew.jsx';
-
+import Technology from './components/Technology/Technology.jsx';
 
 const pages= createBrowserRouter([
   {
@@ -16,6 +16,10 @@ const pages= createBrowserRouter([
   {
     path:"/crew",
     element: <Crew/>,
+  },
+  {
+    path:"/technology",
+    element: <Technology/>,
   },
 
 ])
