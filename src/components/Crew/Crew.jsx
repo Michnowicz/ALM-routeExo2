@@ -5,7 +5,7 @@ import Data from "../../assets/data.json"
 
 
 
-export default function Crew() {
+export default function Crew({page, setPage}) {
 
     let [crew, setCrew] = useState("Douglas Hurley")
 
@@ -34,7 +34,7 @@ export default function Crew() {
     
     return(
         <div className="Crew">
-            <Navbar/>
+            <Navbar page={page} setPage={setPage}/>
             <div className="CrewDiv">
                 <div className="CrewTitle">
                     <p>02</p>

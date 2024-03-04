@@ -29,7 +29,6 @@ nav {
 
 .navLink {
     width: 65%;
-    padding: 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -43,4 +42,9 @@ nav {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.pageSelected {
+    border-bottom: 2px solid white !important;
 }

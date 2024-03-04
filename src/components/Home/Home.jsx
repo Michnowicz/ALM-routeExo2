@@ -1,12 +1,12 @@
 import "./Home.css"
 import Navbar from "../Navbar/Navbar.jsx"
 
-export default function Home() {
+export default function Home({page, setPage, }) {
     
 
     return(
         <div className="Home">
-            <Navbar/>
+            <Navbar page={page} setPage={setPage}/>
             <div className="HomeDiv">
                 <div className="leftContainer">
                     <h2>SO, YOU WANT TO TRAVEL TO</h2>

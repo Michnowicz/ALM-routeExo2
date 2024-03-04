@@ -8,7 +8,7 @@ import Data from "../../assets/data.json"
 
 
 
-export default function Destination({selection, setPlanet}) {
+export default function Destination({page, setPage, selection, setPlanet}) {
 
     const {planet} = useParams
     
@@ -29,7 +29,7 @@ export default function Destination({selection, setPlanet}) {
 
     return(
         <div className="Destination">
-            <Navbar/>
+            <Navbar  page={page} setPage={setPage}/>
             <div className="DestinationDiv">
                 <div className="DestinationTitle">
                     <p>01</p>

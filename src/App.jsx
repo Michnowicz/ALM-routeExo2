@@ -13,23 +13,24 @@ import Destination from './components/Destination/Destination.jsx';
 export default function App() {
 
     let [planet, setPlanet] = useState("Moon")
+    let [page, setPage] = useState("home")
 
     const pages= createBrowserRouter([
         {
             path:"/",
-            element: <Home/>,
+            element: <Home page={page} setPage={setPage}/>,
         },
         {
             path:"/crew",
-            element: <Crew/>,
+            element: <Crew  page={page} setPage={setPage}/>,
         },
         {
             path:"/technology",
-            element: <Technology/>,
+            element: <Technology  page={page} setPage={setPage}/>,
         },
         {
             path:"/destination/:planet",
-            element: <Destination selection={planet} setPlanet={setPlanet} />,
+            element: <Destination  page={page} setPage={setPage} selection={planet} setPlanet={setPlanet} />,
         },
     ])
 

@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 
-export default function Technology({}) {
+export default function Technology({page, setPage, }) {
     
     let [name, setName] = useState("Launch vehicle")
 
@@ -32,7 +32,7 @@ export default function Technology({}) {
 
     return(
         <div className="Technology">
-            <Navbar/>
+            <Navbar page={page} setPage={setPage}/>
 
             <div className="technologyDiv">
                 <div className="TechnologyTitle">
