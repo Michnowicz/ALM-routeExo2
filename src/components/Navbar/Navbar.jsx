@@ -1,7 +1,6 @@
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 import Logo from "../../assets/shared/logo.svg"
-import { useState } from "react"
 
 
 export default function Navbar({page, setPage}) {

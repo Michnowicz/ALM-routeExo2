@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import "./Destination.css"
 import { useParams  } from 'react-router-dom';
 import { Link } from "react-router-dom"
@@ -11,20 +10,10 @@ import Data from "../../assets/data.json"
 export default function Destination({page, setPage, selection, setPlanet}) {
 
     const {planet} = useParams
-    
+
     function handlePlanet(e) {
         setPlanet(e.target.id)
         console.log(e.target.parentElement.children);
-
-
-        Array.from(e.target.parentElement.children).forEach(btn => {
-            if (e.target.id == btn.id) {
-                console.log(btn.id);
-                btn.classList.add("selected")
-            } else {
-                btn.classList.remove("selected")
-            }
-        });
     }
 
     return(
@@ -49,7 +38,7 @@ export default function Destination({page, setPage, selection, setPlanet}) {
                                 <div className="linkDiv">
                                     {
                                         Data["destinations"].map((d,i)=>(
-                                            <Link to={"/destination/"+d.name} id={d.name} key={i} className="planetSelect" onClick={handlePlanet}>
+                                            <Link to={"/destination/"+d.name} id={d.name} key={i} className={selection == d.name ? "planetSelect selected": "planetSelect"} onClick={handlePlanet}>
                                                 {d.name.toLocaleUpperCase()}
                                             </Link>
                                         ))
